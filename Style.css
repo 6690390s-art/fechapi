@@ -1,0 +1,73 @@
+/* Fondo general */
+body {
+    background: linear-gradient(135deg, #eef2ff, #e0f7fa);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contenedor principal */
+.container {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabla */
+.table {
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Encabezado */
+.table thead {
+    background: linear-gradient(135deg, #6366f1, #3b82f6);
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.table th {
+    border: none;
+    padding: 15px;
+    font-size: 14px;
+}
+
+/* Filas */
+.table td {
+    padding: 12px;
+    vertical-align: middle;
+    border-color: #f1f5f9;
+}
+
+/* Hover bonito */
+.table tbody tr {
+    transition: all 0.2s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f1f5ff;
+    transform: scale(1.01);
+}
+
+/* Bordes suaves */
+.table-bordered {
+    border: none;
+}
+
+/* Zebra más elegante */
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f8fafc;
+}
+
+/* Responsive mejora */
+@media (max-width: 768px) {
+    .table th, .table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
